@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<head>
+   <script type="text/javascript" src="speedreader.js"></script> 
+   <link rel="stylesheet" type="text/css" href="speedy.css">
+</head>
+
+<body>
+    <div id="whole_thing">
+    <h1 id="header">Speed Reader!</h1>
+    
+    <div id="text_output"></div>
+    
+
+    
+    <div id="buttons_div">
+        <h2 class="titles">Controls</h2>
+    <button id="go_button" onclick="goButton()">GO</button>
+    <button id="stop_button" onclick="stop()">STOP</button>
+        </div>
+        
+        <div id="speed_div">
+            <h2 class="titles">Word Speed</h2>
+    <select id="selector">
+        <h2 class="titles">Text Speed</h2>
+        <option value="1000" onclick="changeInterval">50wpm</option>
+        <option value="500" onclick="changeInterval">300wpm</option>
+        <option value="250" onclick="changeInterval">350wpm</option>
+        <option value="100" onclick="changeInterval">400wpm</option>
+        <option value="50" onclick="changeInterval">450wpm</option>
+    </select>
+    </div>
+    
+    <div id="radio_div">
+        <h2 class="titles">Text Size</h2>
+    <form action="" id="radioButtons" onClick="setFontSize">
+        <input id="rb1" type="radio" name="size" value="36">Small
+        <input id="rb2" type="radio" name="size" value="48">Medium
+        <input id="rb3" type="radio" name="size" value="60">Large
+    </form>
+    </div>
+    
+        <div id="input_div">
+    <input id="text_input">
+    </div>
+    </div>
+    
+</body>
